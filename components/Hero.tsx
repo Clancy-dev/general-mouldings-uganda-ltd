@@ -5,27 +5,27 @@ import Image from 'next/image'
 
 const heroContent = [
   {
-    image: '/placeholder.svg?height=800&width=1200',
+    image: '/hero1.jpeg?height=800&width=1200',
     title: 'Welcome to General Mouldings',
     subtitle: 'Leading Plastic Manufacturer in Uganda',
   },
   {
-    image: '/placeholder.svg?height=800&width=1200',
+    image: '/hero2.jpeg?height=800&width=1200',
     title: 'Quality Plastic Solutions',
     subtitle: 'Innovative Products for Every Need',
   },
   {
-    image: '/placeholder.svg?height=800&width=1200',
+    image: '/hero3.jpeg?height=800&width=1200',
     title: 'Sustainable Manufacturing',
     subtitle: 'Committed to Eco-Friendly Practices',
   },
   {
-    image: '/placeholder.svg?height=800&width=1200',
+    image: '/hero4.jpeg?height=800&width=1200',
     title: 'Trusted by Businesses',
     subtitle: 'Serving Uganda and Beyond',
   },
   {
-    image: '/placeholder.svg?height=800&width=1200',
+    image: '/hero5.jpeg?height=800&width=1200',
     title: 'Join Our Success Story',
     subtitle: 'Experience Excellence in Plastics',
   },
