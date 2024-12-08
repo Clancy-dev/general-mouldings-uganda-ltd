@@ -10,18 +10,18 @@ const products = [
     image: '/wb1.jpeg?height=300&width=300',
   },
   {
-    name: 'Nyonta Juice Bottle',
-    description: 'Delicious, natural juices in convenient plastic bottles.',
-    image: '/placeholder.svg?height=300&width=300',
+    name: 'Water bottle',
+    description: 'A large, transparent water bottle crafted from durable, high-quality plastic, with a smooth, crystal-clear finish that reflects light beautifully.',
+    image: '/wb2.jpeg?height=300&width=300',
   },
   {
-    name: 'Nyonta Oil Container',
-    description: 'High-quality cooking oil in durable, easy-to-pour containers.',
-    image: '/placeholder.svg?height=300&width=300',
+    name: 'Yellow Jerrican',
+    description: 'A robust and vibrant 20-liter plastic jerrican with a bright yellow finish, featuring a sturdy rectangular design and an ergonomic handle for easy transport. ',
+    image: '/wb3.jpeg?height=300&width=300',
   },
   {
-    name: 'Nyonta Storage Jar',
-    description: 'Versatile jars for storing various food items and more.',
+    name: 'Pot shaped water bottle',
+    description: 'A large, realistic, pot-shaped colorless water bottle made from high-quality, transparent plastic. The bottle has a rounded, sturdy shape with a wide neck and a robust, ergonomic handle for easy carrying.',
     image: '/placeholder.svg?height=300&width=300',
   },
 ]
