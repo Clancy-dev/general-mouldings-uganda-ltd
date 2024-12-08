@@ -47,7 +47,7 @@ export default function ContactUs() {
             </div>
             <div className="flex items-center">
               <MapPin className="w-6 h-6 text-blue-900 mr-4" />
-              <p className="text-gray-700">Seeta Industrial Area, Mukono, Uganda</p>
+              <p className="text-gray-700">Kampala, Uganda</p>
             </div>
           </div>
         </div>
