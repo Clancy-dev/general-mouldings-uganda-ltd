@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 const products = [
   {
-    name: 'Nyonta Water Bottle',
-    description: 'Pure, refreshing water in a sturdy, eco-friendly bottle.',
-    image: '/placeholder.svg?height=300&width=300',
+    name: 'Small White jerrican',
+    description: 'A compact, high-quality plastic jerrican with a smooth white finish and sturdy ergonomic design, featuring a built-in handle for easy carrying.',
+    image: '/wb1.jpeg?height=300&width=300',
   },
   {
     name: 'Nyonta Juice Bottle',
