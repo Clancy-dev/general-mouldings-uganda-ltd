@@ -22,7 +22,7 @@ const products = [
   {
     name: 'Pot shaped water bottle',
     description: 'A large, realistic, pot-shaped colorless water bottle made from high-quality, transparent plastic. The bottle has a rounded, sturdy shape with a wide neck and a robust, ergonomic handle for easy carrying.',
-    image: '/placeholder.svg?height=300&width=300',
+    image: '/wb4.jpeg?height=300&width=300',
   },
 ]
 
