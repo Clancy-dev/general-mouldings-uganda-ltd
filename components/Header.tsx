@@ -53,7 +53,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <div className="w-12 h-12 bg-blue-900 rounded-full mr-4"></div>
+          <div className="w-12 h-12  rounded-full mr-4">
+            <img src="/gm-final-logo.png" alt="General Mouldings Logo" className='w-full h-full'/>
+          </div>
           <h1 className="text-xl font-bold text-blue-900 hidden sm:block">
             General Mouldings (Uganda) Limited
           </h1>
