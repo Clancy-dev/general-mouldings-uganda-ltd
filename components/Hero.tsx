@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const heroContent = [
   {
-    image: '/hero1.jpeg?height=800&width=1200',
+    image: '/hero1.webp?height=800&width=1200',
     title: 'Welcome to General Mouldings',
     subtitle: 'Leading Plastic Manufacturer in Uganda',
   },
@@ -43,7 +43,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative h-screen">
+    <section className="relative mt-[10vh] lg:h-[90vh] md:h-[70vh] sm:h-[60vh] h-[50vh] p-2">
       {heroContent.map((content, index) => (
         <div
           key={index}
@@ -58,7 +58,7 @@ export default function Hero() {
             objectFit="cover"
             priority={index === 0}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+          <div className=" absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center">
               {content.title}
             </h2>

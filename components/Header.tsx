@@ -50,12 +50,13 @@ export default function Header() {
   }, [isMenuOpen])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md h-[10vh] flex items-center justify-center">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <div className="w-12 h-12  rounded-full mr-4">
             <img src="/gm-final-logo.png" alt="General Mouldings Logo" className='w-full h-full'/>
           </div>
+          
           <h1 className="text-xl font-bold text-blue-900 hidden sm:block">
             General Mouldings (Uganda) Limited
           </h1>

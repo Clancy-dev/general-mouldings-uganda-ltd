@@ -6,6 +6,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const faqs = [
   {
+    question: "What is General Mouldings (Uganda) Ltd 's  Industry",
+    answer: "GENERAL MOULDINGS (UGANDA) LTD is in the industry of Plastics Product Manufacturing."
+  },
+  {
+    question: "Where is GENERAL MOULDINGS (UGANDA) LTD located?",
+    answer: "GENERAL MOULDINGS (UGANDA) LTD is located at Kaka Building, Plot No. 15/17 1st Street, Industrial Area Kampala Uganda"
+  },
+  {
     question: "What's the difference between injection molding and blow molding?",
     answer: "Injection molding involves injecting molten plastic into a mold cavity, while blow molding inflates a heated plastic tube inside a mold. We use injection molding for precise, solid parts like bottle caps, and blow molding for hollow items like bottles."
   },
