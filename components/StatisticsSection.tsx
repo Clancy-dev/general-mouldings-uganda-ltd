@@ -51,8 +51,8 @@ export default function StatisticsSection() {
 
   return (
     <section ref={sectionRef} className="relative py-16 bg-gradient-to-br from-blue-500 to-blue-700 text-white overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">Our Milestones at a Glance</h2>
+      <div className="container mx-auto px-4 relative z-1">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-12">Our Milestones at a Glance</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-8">
           {statistics.map((stat, index) => (
             <StatCard key={index} stat={stat} isVisible={isVisible} delay={index * 200} />

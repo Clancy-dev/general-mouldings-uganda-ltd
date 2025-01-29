@@ -15,8 +15,13 @@ import StatisticsPage from "@/components/StatisticsPage";
 import StatisticsSection from "@/components/StatisticsSection";
 import Sustainability from "@/components/Sustainability";
 import Testimonials from "@/components/Testimonials";
+import { Metadata } from "next";
 
-
+export const metadata: Metadata = {
+  title: "General Mouldings (U) Ltd | Uganda’s Leading Plastics Manufacturer & Exporter",
+  description:
+    "Welcome to General Mouldings (U) Ltd, the leading manufacturer and exporter of high-quality plastic products in Uganda. We provide durable, eco-friendly solutions for households, industries, and commercial needs. Explore our products and services today.",
+};
 export default function Home() {
   return (
     <div className="min-h-screen bg-white mt-[72px]">
