@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils'
 const links = [
   { name: 'Home', icon: <House className="w-4 h-4" />, href: '/' },
   { name: 'About Us', icon: <Info className="w-4 h-4" />, href: '/about' },
-  { name: 'Products', icon: <Handshake className="w-4 h-4" />, href: '/services' }, 
+  { name: 'Our Products', icon: <Handshake className="w-4 h-4" />, href: '/services' }, 
   // { name: 'Sustainability', icon: <Leaf className="w-4 h-4" />, href: '/sus' },
   // { name: 'FAQ', icon: <CircleHelp className="w-4 h-4" />, href: '/faq' },
   { name: 'Find us', icon: <MapPin className="w-4 h-4" />, href: '/find-us' },
