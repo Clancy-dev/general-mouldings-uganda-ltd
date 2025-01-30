@@ -44,7 +44,7 @@ const products = [
     name: "Medicine bottles",
     category: "Phamecutical platics",
     description: "Phamecutical platics for packing medicine.",
-    image: "/medicine.png?height=200&width=300",
+    image: "/medicine.jpg?height=200&width=300",
     material: "HDPE",
     colors: ["White"],
   },
