@@ -1,3 +1,4 @@
+import OurProducts from '@/components/OurProducts';
 import Products from '@/components/Products'
 import Services from '@/components/Services'
 import { Metadata } from 'next';
@@ -13,9 +14,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className='mt-[72px]'>
-      <p className='p-5'>Being Worked On...</p>
-    {/* <Services />
-    <Products /> */}
+    <OurProducts/>
     </div>
   )
 }
