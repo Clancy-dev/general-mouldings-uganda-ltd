@@ -2,6 +2,7 @@
 
 import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
+import FAQ from './FAQ'
 
 export default function About() {
   const { ref, inView } = useInView({
@@ -10,6 +11,7 @@ export default function About() {
   })
 
   return (
+    <>
     <section id="about" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-200 z-0" />
       <div className="absolute inset-0 z-10">
@@ -62,7 +64,11 @@ export default function About() {
           50% { transform: translateY(-20px); }
         }
       `}</style>
+
+      
     </section>
+    <FAQ/>
+    </>
   )
 }
 
