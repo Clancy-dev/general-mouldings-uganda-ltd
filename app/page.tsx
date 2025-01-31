@@ -1,4 +1,6 @@
 import About from "@/components/About";
+import AboutUsOverview from "@/components/AboutUsOverview";
+import CallToActionHome from "@/components/CallToActionHome";
 import ContactUs from "@/components/ContactUs";
 import FAQ from "@/components/FAQ";
 import FeaturedProductsSection from "@/components/FeaturedProducts";
@@ -7,6 +9,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HomeProducts from "@/components/HomeProducts";
+import IndustriesWeServe from "@/components/IndustriesWeServe";
 import Products from "@/components/Products";
 import ReviewSection from "@/components/ReviewSection";
 import ScrollingBrands from "@/components/ScrollingBrands";
@@ -16,6 +19,7 @@ import StatisticsPage from "@/components/StatisticsPage";
 import StatisticsSection from "@/components/StatisticsSection";
 import Sustainability from "@/components/Sustainability";
 import Testimonials from "@/components/Testimonials";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -85,11 +89,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white mt-[72px]">
       <Hero />
+      <AboutUsOverview/>
       <HomeProducts/>
-      {/* <FeaturedProductsSection/> */}
       <StatisticsPage/>
-      <ScrollingBrands/>
+      <IndustriesWeServe/>
+      <ScrollingBrands/>   
+      <WhyChooseUs/>
       <ReviewSection/>
+      <CallToActionHome/>
     </div>
   )
 }
