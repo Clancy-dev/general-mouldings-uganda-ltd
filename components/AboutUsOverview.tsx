@@ -20,15 +20,15 @@ export default function AboutUsOverview() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-4xl font-bold mb-6">About General Mouldings Uganda</h2>
-          <p className="text-xl mb-8">
+          <h2 className="text-4xl font-bold mb-6 z-20 relative">About General Mouldings Uganda</h2>
+          <p className="text-xl mb-8 z-20 relative">
             With over two decades of experience, General Mouldings Uganda Ltd. is your trusted partner in high-quality
             plastic solutions. We combine cutting-edge technology with eco-friendly practices to deliver innovative
             products that meet the diverse needs of our clients across various industries.
           </p>
           <Button
             size="lg"
-            className="bg-white text-dark-blue hover:bg-blue-950 hover:border-white border-[1px] hover:text-white transition-colors duration-300 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl"
+            className="bg-white text-dark-blue z-20 relative hover:bg-blue-950 hover:border-white border-[1px] hover:text-white transition-colors duration-300 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl"
           >
             Learn More
           </Button>

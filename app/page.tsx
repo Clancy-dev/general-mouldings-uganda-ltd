@@ -87,13 +87,13 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white mt-[72px]">
+    <div className="min-h-screen bg-white lg:mt-[112px] mt-[72px]">
       <Hero />
       <AboutUsOverview/>
       <HomeProducts/>
       <StatisticsPage/>
       <IndustriesWeServe/>
-      <ScrollingBrands/>   
+      {/* <ScrollingBrands/>    */}
       <WhyChooseUs/>
       <ReviewSection/>
       <CallToActionHome/>

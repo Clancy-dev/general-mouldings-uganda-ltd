@@ -104,7 +104,7 @@ export default function ReviewSection() {
   return (
     <section ref={ref} className="py-8 sm:py-12 md:py-20 bg-gradient-to-br from-[#1e3a8a]/10 to-gray-100">
       <div className="container mx-auto px-4 max-w-[95%] md:max-w-[90%] lg:max-w-4xl">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-[#1e3a8a]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-dark-blue">
           What Our Customers Say
         </h2>
         <div className="relative">
@@ -130,7 +130,7 @@ export default function ReviewSection() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#1e3a8a] text-base sm:text-lg">{reviews[currentReview].name}</h3>
+                  <h3 className="font-semibold text-dark-blue text-base sm:text-lg">{reviews[currentReview].name}</h3>
                   <p className="text-gray-600 text-sm sm:text-base">Satisfied Customer</p>
                 </div>
               </div>
@@ -141,14 +141,14 @@ export default function ReviewSection() {
           <div className="flex justify-between mt-4 sm:mt-0">
             <button
               onClick={prevReview}
-              className="sm:absolute left-0 sm:left-0 top-1/2 sm:-translate-y-1/2 sm:-translate-x-12 bg-white p-2 rounded-full shadow-md text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
+              className="sm:absolute left-0 sm:left-0 top-1/2 sm:-translate-y-1/2 sm:-translate-x-12 bg-white p-2 rounded-full shadow-md text-dark-blue hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
               aria-label="Previous review"
             >
               <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             <button
               onClick={nextReview}
-              className="sm:absolute right-0 sm:right-0 top-1/2 sm:-translate-y-1/2 sm:translate-x-12 bg-white p-2 rounded-full shadow-md text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
+              className="sm:absolute right-0 sm:right-0 top-1/2 sm:-translate-y-1/2 sm:translate-x-12 bg-white p-2 rounded-full shadow-md text-dark-blue hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
               aria-label="Next review"
             >
               <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />

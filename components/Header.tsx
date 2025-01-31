@@ -75,7 +75,7 @@ export default function Header() {
       </div>
 
       {/* Main navigation */}
-      <nav className={cn("bg-white transition-all duration-300 relative z-50", isScrolled ? "py-2" : "py-4")}>
+      <nav className={cn(" transition-all duration-300 relative z-50 bg-white w-full h-[72px] flex")}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
@@ -85,7 +85,7 @@ export default function Header() {
                   alt="General Mouldings Logo"
                   width={60}
                   height={60}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <h1 className="text-xl font-bold text-dark-blue hidden sm:block">General Mouldings (U) Ltd</h1>
@@ -98,12 +98,15 @@ export default function Header() {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "flex items-center space-x-1 px-3 py-2 rounded-md font-semibold transition-colors text-sm nav-link",
+                  "flex flex-col items-center space-x-1 px-3 py-2 rounded-md font-semibold transition-colors text-sm nav-link",
                   pathname === link.href ? "text-white bg-dark-blue" : "text-dark-blue hover:bg-gray-100",
                 )}
               >
+                <div className="flex gap-[1px]">
                 {link.icon}
                 <span>{link.name}</span>
+                </div>
+                
               </Link>
             ))}
           </div>

@@ -43,7 +43,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative mt-[18vh] lg:h-[90vh]  md:h-[70vh] sm:h-[60vh] h-[50vh] p-2">
+    <section className="relative lg:h-[90vh]  md:h-[70vh] sm:h-[60vh] h-[50vh] p-2">
       {heroContent.map((content, index) => (
         <div
           key={index}
