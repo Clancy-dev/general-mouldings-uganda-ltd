@@ -13,10 +13,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const featuredProducts = [
   {
     id: 1,
-    name: "Plastic Bucket",
+    name: "Household Bucket",
     category: "Household Plastics",
     description: "Durable plastic bucket available in various sizes.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/bucket.png?height=200&width=300",
     colors: ["Red", "Blue", "Green"],
     contacts: [
       { type: "phone", value: "+256 123 456 789" },
@@ -26,11 +26,11 @@ const featuredProducts = [
   },
   {
     id: 2,
-    name: "Plastic Crate",
-    category: "Industrial Plastics",
-    description: "Heavy-duty crate for industrial use.",
-    image: "/placeholder.svg?height=200&width=300",
-    colors: ["Black", "Yellow"],
+    name: "Paint Bucket",
+    category: "Household Plastics",
+    description: "Durable plastic bucket available in various sizes.",
+    image: "/white.png?height=200&width=300",
+    colors: ["White"],
     contacts: [
       { type: "phone", value: "+256 987 654 321" },
       { type: "email", value: "crates@generalmouldings.com" },
@@ -39,11 +39,11 @@ const featuredProducts = [
   },
   {
     id: 3,
-    name: "Plastic Chair",
-    category: "Household Plastics",
-    description: "Lightweight and strong plastic chair.",
-    image: "/placeholder.svg?height=200&width=300",
-    colors: ["White", "Blue", "Green"],
+    name: "Beverage Bottles",
+    category: "Industrial Plastics",
+    description: "Beverage bottles for industrial use.",
+    image: "/beverage.png?height=200&width=300",
+    colors: ["Blue","Brown", "Yellow","Green","Clear"],
     contacts: [
       { type: "phone", value: "+256 246 813 579" },
       { type: "email", value: "chairs@generalmouldings.com" },
@@ -52,11 +52,11 @@ const featuredProducts = [
   },
   {
     id: 4,
-    name: "Storage Container",
+    name: "Small Jerricans (1L - 5L)",
     category: "Household Plastics",
-    description: "Versatile storage solution for home and office.",
-    image: "/placeholder.svg?height=200&width=300",
-    colors: ["Clear", "Blue", "Green"],
+    description: "Popular for drinking water, motor oil, and liquid fertilizers.",
+    image: "/small-jerrican.png?height=200&width=300",
+    colors: ["White","Yellow", "Blue", "Green"],
     contacts: [
       { type: "phone", value: "+256 135 792 468" },
       { type: "email", value: "storage@generalmouldings.com" },
@@ -65,11 +65,11 @@ const featuredProducts = [
   },
   {
     id: 5,
-    name: "Industrial Drum",
-    category: "Industrial Plastics",
-    description: "Large capacity drum for industrial liquids.",
-    image: "/placeholder.svg?height=200&width=300",
-    colors: ["Blue", "Black"],
+    name: "Medium Jerricans(10L - 20L)",
+    category: "Household Plastics",
+    description: "Popular for drinking water, motor oil, and liquid fertilizers.",
+    image: "/jerrican.png?height=200&width=300",
+    colors: ["Yellow","White", "Blue", "Green","Red"],
     contacts: [
       { type: "phone", value: "+256 369 258 147" },
       { type: "email", value: "drums@generalmouldings.com" },
@@ -78,11 +78,11 @@ const featuredProducts = [
   },
   {
     id: 6,
-    name: "Plastic Table",
+    name: "Large Jerricans (25L - 50L)",
     category: "Household Plastics",
-    description: "Durable and easy to clean plastic table.",
-    image: "/placeholder.svg?height=200&width=300",
-    colors: ["White", "Beige"],
+    description: "Popular for drinking water, motor oil, and liquid fertilizers.",
+    image: "/big-jerrican.png?height=200&width=300",
+    colors: ["White","Yellow", "Blue", "Green","Red"],
     contacts: [
       { type: "phone", value: "+256 741 852 963" },
       { type: "email", value: "tables@generalmouldings.com" },
@@ -129,7 +129,7 @@ function ProductCard({ product }:{product:any}) {
             src={product.image || "/placeholder.svg"}
             alt={product.name}
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             className={`transition-transform duration-300 ${isHovered ? "scale-110" : "scale-100"}`}
           />
         </div>
