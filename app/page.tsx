@@ -6,6 +6,7 @@ import FindUs from "@/components/FindUs";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import HomeProducts from "@/components/HomeProducts";
 import Products from "@/components/Products";
 import ReviewSection from "@/components/ReviewSection";
 import ScrollingBrands from "@/components/ScrollingBrands";
@@ -84,7 +85,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white mt-[72px]">
       <Hero />
-      <FeaturedProductsSection/>
+      <HomeProducts/>
+      {/* <FeaturedProductsSection/> */}
       <StatisticsPage/>
       <ScrollingBrands/>
       <ReviewSection/>
