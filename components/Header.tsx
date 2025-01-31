@@ -175,7 +175,7 @@ export default function Header() {
               <Instagram className="w-5 h-5" />
             </a>
           </div>
-        </div>
+        </div> 
       </nav>
     </header>
   )

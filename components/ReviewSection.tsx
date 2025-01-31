@@ -102,10 +102,12 @@ export default function ReviewSection() {
   }
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-br from-dark-blue/10 to-gray-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-10 text-dark-blue">What Our Customers Say</h2>
-        <div className="max-w-4xl mx-auto relative">
+    <section ref={ref} className="py-8 sm:py-12 md:py-20 bg-gradient-to-br from-[#1e3a8a]/10 to-gray-100">
+      <div className="container mx-auto px-4 max-w-[95%] md:max-w-[90%] lg:max-w-4xl">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-[#1e3a8a]">
+          What Our Customers Say
+        </h2>
+        <div className="relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentReview}
@@ -113,48 +115,56 @@ export default function ReviewSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
-              className="bg-white p-8 rounded-lg shadow-lg"
+              className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg"
             >
-              <Quote className="w-12 h-12 text-dark-blue/20 mb-4" />
-              <p className="text-lg text-gray-700 mb-6">"{reviews[currentReview].text}"</p>
+              <Quote className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#1e3a8a]/20 mb-3 sm:mb-4" />
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">"{reviews[currentReview].text}"</p>
               <div className="flex items-center">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
                   <Image
                     src={reviews[currentReview].image || "/placeholder.svg"}
                     alt={reviews[currentReview].name}
                     width={64}
                     height={64}
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark-blue text-lg">{reviews[currentReview].name}</h3>
-                  <p className="text-gray-600">Satisfied Customer</p>
+                  <h3 className="font-semibold text-[#1e3a8a] text-base sm:text-lg">{reviews[currentReview].name}</h3>
+                  <p className="text-gray-600 text-sm sm:text-base">Satisfied Customer</p>
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
-          <button
-            onClick={prevReview}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 bg-white p-2 rounded-full shadow-md text-dark-blue hover:bg-dark-blue hover:text-white transition-colors duration-300"
-            aria-label="Previous review"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
-            onClick={nextReview}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 bg-white p-2 rounded-full shadow-md text-dark-blue hover:bg-dark-blue hover:text-white transition-colors duration-300"
-            aria-label="Next review"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+
+          {/* Navigation buttons - Repositioned for mobile */}
+          <div className="flex justify-between mt-4 sm:mt-0">
+            <button
+              onClick={prevReview}
+              className="sm:absolute left-0 sm:left-0 top-1/2 sm:-translate-y-1/2 sm:-translate-x-12 bg-white p-2 rounded-full shadow-md text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
+              aria-label="Previous review"
+            >
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+            <button
+              onClick={nextReview}
+              className="sm:absolute right-0 sm:right-0 top-1/2 sm:-translate-y-1/2 sm:translate-x-12 bg-white p-2 rounded-full shadow-md text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white transition-colors duration-300"
+              aria-label="Next review"
+            >
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+          </div>
         </div>
-        <div className="flex justify-center mt-8 flex-wrap">
+
+        {/* Pagination dots */}
+        <div className="flex justify-center mt-6 sm:mt-8 flex-wrap gap-1">
           {reviews.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentReview(index)}
-              className={`w-3 h-3 rounded-full mx-1 mb-2 ${index === currentReview ? "bg-dark-blue" : "bg-gray-300"}`}
+              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full mx-0.5 sm:mx-1 transition-colors duration-300 ${
+                index === currentReview ? "bg-[#1e3a8a]" : "bg-gray-300"
+              }`}
               aria-label={`Go to review ${index + 1}`}
             />
           ))}
