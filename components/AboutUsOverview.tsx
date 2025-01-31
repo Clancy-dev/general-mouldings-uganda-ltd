@@ -2,11 +2,18 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { DotPattern } from "./ui/dot-pattern"
+import { cn } from "@/lib/utils"
 
 export default function AboutUsOverview() {
   return (
-    <section className="py-20 bg-dark-blue text-white">
+    <section className="relative py-20 bg-dark-blue text-white">
       <div className="container mx-auto px-4">
+      <DotPattern
+        className={cn(
+          "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
+        )}
+      />
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -21,7 +28,7 @@ export default function AboutUsOverview() {
           </p>
           <Button
             size="lg"
-            className="bg-white text-dark-blue hover:bg-gray-200 transition-colors duration-300 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl"
+            className="bg-white text-dark-blue hover:bg-blue-950 hover:border-white border-[1px] hover:text-white transition-colors duration-300 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl"
           >
             Learn More
           </Button>

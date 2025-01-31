@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { Package, Building, HardHat, ShoppingBag, Pill, Utensils } from "lucide-react"
+import { AnimatedGridPattern } from "./ui/animated-grid-pattern"
+import { cn } from "@/lib/utils"
 
 const industries = [
   { name: "Packaging", icon: Package, description: "Innovative packaging solutions" },
@@ -14,7 +16,17 @@ const industries = [
 
 export default function IndustriesWeServe() {
   return (
-    <section className="py-20 bg-dark-blue text-white">
+    <section className="relative overflow-hidden py-20 bg-dark-blue text-white w-full min-h-[20vh]">
+        <AnimatedGridPattern
+        numSquares={30}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+        )}
+      />
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

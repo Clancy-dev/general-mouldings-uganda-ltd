@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const heroContent = [
   {
-    image: '/hero1.webp?height=800&width=1200',
+    image: '/hero1.png?height=800&width=1200',
     title: 'Welcome to General Mouldings',
     subtitle: 'Leading Plastic Manufacturer in Uganda',
   },
@@ -43,7 +43,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative mt-[10vh] lg:h-[90vh] md:h-[70vh] sm:h-[60vh] h-[50vh] p-2">
+    <section className="relative mt-[18vh] lg:h-[90vh]  md:h-[70vh] sm:h-[60vh] h-[50vh] p-2">
       {heroContent.map((content, index) => (
         <div
           key={index}
