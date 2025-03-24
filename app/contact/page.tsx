@@ -73,6 +73,7 @@ export default function page() {
   return (
     <div className='mt-[72px]'>
       <ContactUs/>
+      {/* contact */}
     </div>
   )
 }
