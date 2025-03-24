@@ -1,4 +1,5 @@
-import About from '@/components/About'
+
+import AboutUs from '@/components/about-us';
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className='mt-[72px]'>
-       <About />
+       <AboutUs/>
     </div>
   )
 }

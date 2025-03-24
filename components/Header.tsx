@@ -53,11 +53,11 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <a href="mailto:info@generalmouldings.com" className="flex items-center space-x-2 hover:text-gray-300">
               <Mail className="w-4 h-4" />
-              <span>info@generalmouldings.com</span>
+              <span>sekhar@gml.co.ug</span>
             </a>
             <a href="tel:+256123456789" className="flex items-center space-x-2 hover:text-gray-300">
               <Phone className="w-4 h-4" />
-              <span>+256 123 456 789</span>
+              <span>+256 414 250 776</span>
             </a>
           </div>
           <div className="flex items-center space-x-4">
