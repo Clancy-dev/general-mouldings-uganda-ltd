@@ -58,7 +58,7 @@ export default function Hero() {
             objectFit="cover"
             priority={index === 0}
           />
-          <div className=" absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+          <div className=" absolute inset-0 bg-[#3D3A3A] bg-opacity-50 flex flex-col justify-center items-center text-white">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center">
               {content.title}
             </h2>
