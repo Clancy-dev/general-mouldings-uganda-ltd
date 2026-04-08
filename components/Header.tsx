@@ -55,9 +55,9 @@ export default function Header() {
               <Mail className="w-4 h-4" />
               <span>sekhar@gml.co.ug</span>
             </a>
-            <a href="tel:+256123456789" className="flex items-center space-x-2 hover:text-gray-300">
+            <a href="tel:256754620620" className="flex items-center space-x-2 hover:text-gray-300">
               <Phone className="w-4 h-4" />
-              <span>+256 414 250 776</span>
+              <span>+256 754 620 620</span>
             </a>
           </div>
           <div className="flex items-center space-x-4">

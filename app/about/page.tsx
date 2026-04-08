@@ -1,70 +1,67 @@
 
 import AboutUs from '@/components/about-us';
-import { Metadata } from 'next';
 import React from 'react'
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us - General Mouldings (U) Ltd | Uganda’s Leading Plastics Manufacturer & Exporter",
-  description:
-    "Discover General Mouldings (U) Ltd, Uganda’s trusted manufacturer and exporter of high-quality plastic products. With cutting-edge technology and a commitment to sustainability, we deliver durable, eco-friendly solutions for diverse industries. Learn more about our mission, values, and impact.",
-    keywords: [
-      // General Mouldings (U) Ltd variations
-      
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings (U) Ltd",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "GML",
-      "General Mouldings Limited Uganda",
-      "General Mouldings plastics",
-      "General Mouldings Uganda Limited",
-      "General Mouldings Kampala",
-      "General Mouldings company Uganda",
-      "General Mouldings manufacturer",
-      "General Mouldings products",
-      "General Mouldings factory Uganda",
-      "General Mouldings exporters Uganda",
+  metadataBase: new URL("https://generalmouldingsultd.com"),
+
+  title: "About General Mouldings (U) Ltd | Uganda’s Leading Plastic Manufacturer",
   
-      // Plastic manufacturing company searches
-      "plastic manufacturers in Uganda",
-      "plastic products Uganda",
-      "plastic manufacturing companies Uganda",
-      "best plastic manufacturer Uganda",
-      "industrial plastic manufacturers Uganda",
-      "plastic suppliers in Uganda",
-      "plastics factory Uganda",
-      "plastic packaging manufacturers Uganda",
-      "custom plastic molding Uganda",
-      "plastic injection molding Uganda",
-      "plastic exporters in Uganda",
-      "plastic recycling Uganda",
-      "sustainable plastic products Uganda",
-      "affordable plastic products Uganda",
-      "commercial plastic manufacturing Uganda",
-      "plastic container manufacturers Uganda",
-      "household plastic products Uganda",
-      "industrial plastic solutions Uganda",
-      "eco-friendly plastic manufacturers Uganda",
-      "plastic production Uganda",
-      "plastic company Kampala",
-      "plastic solutions Uganda",
-      "leading plastic manufacturer Uganda",
-      "custom plastic products Uganda",
-      "bulk plastic production Uganda",
-      "wholesale plastic suppliers Uganda"
+  description:
+    "Learn about General Mouldings (U) Ltd, a leading plastic manufacturer in Uganda since 1993. We produce high-quality, eco-friendly plastic products for industrial and domestic use across Uganda and international markets.",
+
+  keywords: [
+    "General Mouldings Uganda",
+    "General Mouldings (U) Ltd",
+    "plastic manufacturers in Uganda",
+    "plastic products Uganda",
+    "plastic factory Kampala",
+    "plastic packaging Uganda",
+    "plastic exporters Uganda",
+    "industrial plastic Uganda",
+    "eco-friendly plastic Uganda",
+    "plastic company Kampala",
+  ],
+
+  alternates: {
+    canonical: "/about",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "About General Mouldings (U) Ltd",
+    description:
+      "Discover Uganda’s trusted plastic manufacturer delivering high-quality and sustainable plastic solutions.",
+    url: "https://generalmouldingsultd.com/about",
+    siteName: "General Mouldings (U) Ltd",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://generalmouldingsultd.com/front photo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "General Mouldings Uganda Factory",
+      },
     ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "About General Mouldings (U) Ltd",
+    description:
+      "Leading plastic manufacturer in Uganda offering durable and eco-friendly solutions.",
+    images: ["https://generalmouldingsultd.com/front photo.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 

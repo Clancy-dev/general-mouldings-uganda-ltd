@@ -4,69 +4,66 @@ import Services from '@/components/Services'
 import { Metadata } from 'next';
 import React from 'react'
 
-
 export const metadata: Metadata = {
-  title: "Products - General Mouldings (U) Ltd | Leading Plastics Manufacturer in Uganda",
+  metadataBase: new URL("https://generalmouldingsultd.com"),
+
+  title: "Plastic Products in Uganda | General Mouldings (U) Ltd",
+
   description:
-    "At General Mouldings (U) Ltd, we specialize in manufacturing high-quality plastic products for various industries. From household items to industrial packaging, we provide durable and eco-friendly solutions tailored to meet your needs. Learn more about our services and expertise.",
-    keywords: [
-      // General Mouldings (U) Ltd variations
-      
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings (U) Ltd",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "GML",
-      "General Mouldings Limited Uganda",
-      "General Mouldings plastics",
-      "General Mouldings Uganda Limited",
-      "General Mouldings Kampala",
-      "General Mouldings company Uganda",
-      "General Mouldings manufacturer",
-      "General Mouldings products",
-      "General Mouldings factory Uganda",
-      "General Mouldings exporters Uganda",
-  
-      // Plastic manufacturing company searches
-      "plastic manufacturers in Uganda",
-      "plastic products Uganda",
-      "plastic manufacturing companies Uganda",
-      "best plastic manufacturer Uganda",
-      "industrial plastic manufacturers Uganda",
-      "plastic suppliers in Uganda",
-      "plastics factory Uganda",
-      "plastic packaging manufacturers Uganda",
-      "custom plastic molding Uganda",
-      "plastic injection molding Uganda",
-      "plastic exporters in Uganda",
-      "plastic recycling Uganda",
-      "sustainable plastic products Uganda",
-      "affordable plastic products Uganda",
-      "commercial plastic manufacturing Uganda",
-      "plastic container manufacturers Uganda",
-      "household plastic products Uganda",
-      "industrial plastic solutions Uganda",
-      "eco-friendly plastic manufacturers Uganda",
-      "plastic production Uganda",
-      "plastic company Kampala",
-      "plastic solutions Uganda",
-      "leading plastic manufacturer Uganda",
-      "custom plastic products Uganda",
-      "bulk plastic production Uganda",
-      "wholesale plastic suppliers Uganda"
+    "Explore high-quality plastic products from General Mouldings (U) Ltd, Uganda’s leading manufacturer. We offer durable plastic containers, packaging solutions, and industrial products for bulk orders and commercial use.",
+
+  keywords: [
+    "plastic products Uganda",
+    "plastic containers Uganda",
+    "plastic packaging Uganda",
+    "industrial plastic Uganda",
+    "plastic manufacturers in Uganda",
+    "plastic suppliers Kampala",
+    "bulk plastic products Uganda",
+    "custom plastic molding Uganda",
+    "plastic factory Uganda",
+    "eco-friendly plastic products Uganda",
+  ],
+
+  alternates: {
+    canonical: "/products",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "Plastic Products in Uganda | General Mouldings (U) Ltd",
+    description:
+      "Browse durable and eco-friendly plastic products for industrial and domestic use in Uganda.",
+    url: "https://generalmouldingsultd.com/products",
+    siteName: "General Mouldings (U) Ltd",
+    type: "website",
+    images: [
+      {
+        url: "https://generalmouldingsultd.com/hero1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Plastic Products by General Mouldings Uganda",
+      },
     ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Plastic Products in Uganda",
+    description:
+      "High-quality plastic containers and packaging solutions for businesses and households.",
+    images: ["https://generalmouldingsultd.com/hero1.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+
+  category: "products",
 };
 
 export default function page() {

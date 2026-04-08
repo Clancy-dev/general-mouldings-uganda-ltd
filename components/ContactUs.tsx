@@ -173,7 +173,7 @@ export default function ContactUs() {
                       <Button
                         type="submit"
                         className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md"
-                        disabled={isSubmitting}
+                        disabled
                       >
                         {isSubmitting ? (
                           <>

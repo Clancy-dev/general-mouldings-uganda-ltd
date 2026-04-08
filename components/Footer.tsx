@@ -63,10 +63,10 @@ export default function Footer() {
               <li className="space-y-1">
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2 text-blue-300 flex-shrink-0" />
-                  <span>Tel: +256 414 250 776</span>
+                  <span>Tel: +256 712 620 620</span>
                 </div>
                 <div className="ml-6">
-                  <span>Fax: +256 312 260 598</span>
+                  <span>Tel: +256 754 620 620</span>
                 </div>
               </li>
               <li className="space-y-1">
@@ -75,7 +75,7 @@ export default function Footer() {
                   <span>sekhar@gml.co.ug</span>
                 </div>
                 <div className="ml-6">
-                  <span>accounts@gml.co.ug</span>
+                  <span>saphalgc@gmail.com</span>
                 </div>
               </li>
             </ul>

@@ -2,68 +2,62 @@ import FindUs from '@/components/FindUs'
 import { Metadata } from 'next';
 import React from 'react'
 
+
 export const metadata: Metadata = {
-  title: "Find Us - General Mouldings (U) Ltd | Locate Our Offices & Facilities",
+  metadataBase: new URL("https://generalmouldingsultd.com"),
+
+  title: "Find General Mouldings (U) Ltd | Factory & Office Locations in Uganda",
+
   description:
-    "Find General Mouldings (U) Ltd easily with our detailed location guide. Visit our offices and manufacturing facilities in Uganda. Get directions, office hours, and contact details to plan your visit effortlessly.",
-    keywords: [
-      // General Mouldings (U) Ltd variations
-      
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings Uganda",
-      "General Mouldings (U) Ltd",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "General Mouldings",
-      "GML",
-      "General Mouldings Limited Uganda",
-      "General Mouldings plastics",
-      "General Mouldings Uganda Limited",
-      "General Mouldings Kampala",
-      "General Mouldings company Uganda",
-      "General Mouldings manufacturer",
-      "General Mouldings products",
-      "General Mouldings factory Uganda",
-      "General Mouldings exporters Uganda",
-  
-      // Plastic manufacturing company searches
-      "plastic manufacturers in Uganda",
-      "plastic products Uganda",
-      "plastic manufacturing companies Uganda",
-      "best plastic manufacturer Uganda",
-      "industrial plastic manufacturers Uganda",
-      "plastic suppliers in Uganda",
-      "plastics factory Uganda",
-      "plastic packaging manufacturers Uganda",
-      "custom plastic molding Uganda",
-      "plastic injection molding Uganda",
-      "plastic exporters in Uganda",
-      "plastic recycling Uganda",
-      "sustainable plastic products Uganda",
-      "affordable plastic products Uganda",
-      "commercial plastic manufacturing Uganda",
-      "plastic container manufacturers Uganda",
-      "household plastic products Uganda",
-      "industrial plastic solutions Uganda",
-      "eco-friendly plastic manufacturers Uganda",
-      "plastic production Uganda",
-      "plastic company Kampala",
-      "plastic solutions Uganda",
-      "leading plastic manufacturer Uganda",
-      "custom plastic products Uganda",
-      "bulk plastic production Uganda",
-      "wholesale plastic suppliers Uganda"
+    "Locate General Mouldings (U) Ltd in Uganda. Visit our offices and manufacturing facilities in Kampala and Mukono. Get directions, maps, and opening hours to plan your visit.",
+
+  keywords: [
+    "General Mouldings Uganda location",
+    "plastic factory Kampala location",
+    "plastic manufacturer Uganda address",
+    "General Mouldings Mukono factory",
+    "plastic company Kampala directions",
+    "plastic suppliers Uganda location",
+    "industrial plastic Uganda location",
+  ],
+
+  alternates: {
+    canonical: "/find-us",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "Find General Mouldings (U) Ltd",
+    description:
+      "Visit our plastic manufacturing facilities in Uganda. Get directions to our Kampala and Mukono locations.",
+    url: "https://generalmouldingsultd.com/find-us",
+    siteName: "General Mouldings (U) Ltd",
+    type: "website",
+    images: [
+      {
+        url: "https://generalmouldingsultd.com/front photo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "General Mouldings Uganda Location",
+      },
     ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Find General Mouldings (U) Ltd",
+    description:
+      "Get directions to our offices and manufacturing facilities in Uganda.",
+    images: ["https://generalmouldingsultd.com/front photo.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function page() {

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const heroContent = [
   {
-    image: '/hero1.png?height=800&width=1200',
+    image: '/hero1.jpg?height=800&width=1200',
     title: 'Welcome to General Mouldings',
     subtitle: 'Leading Plastic Manufacturer in Uganda',
   },
